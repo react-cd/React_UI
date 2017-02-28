@@ -1,0 +1,75 @@
+.mq-modal-portal{
+    position: fixed;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    z-index: 1040;
+
+    .mq-modal-mask{
+        position: fixed;
+        top:0;
+        left:0;
+        right: 0;
+        bottom: 0;
+        background-color: #1f1f21;
+        opacity: 0;
+        transition: opacity .15s linear;
+    }
+
+    .mq-modal-dialog{
+        position: relative;
+        max-width: 600px;
+        margin: 100px auto 30px;
+        background-color: #fff;
+        box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+        transition: transform .3s ease-out;
+        transform: translateY(-25%);
+
+        .mq-modal-close{
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            right: 8px;
+            top: 8px;
+            opacity: 0.8;
+            cursor: pointer;
+            &:hover{
+                opacity: 1;
+            }
+        }
+
+    }
+
+    .mq-modal-content{
+        padding: 20px 30px;
+
+        .mq-modal-header{
+            font-size: 14px;
+            color: #5a6978;
+            margin-bottom: 20px;
+        }
+
+        .mq-modal-body{
+            margin-bottom: 20px;
+            font-size: 13px;
+            color:#767d85;
+        }
+
+        .mq-modal-footer{
+            .mq-btn{
+                margin-right: 10px;
+            }
+        }
+
+    }
+
+    &.mq-after-open{
+        .mq-modal-mask{
+            opacity: 0.86;
+        }
+        .mq-modal-dialog{
+            transform: translate(0);
+        }
+    }
+}

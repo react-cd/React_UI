@@ -1,0 +1,36 @@
+.mq-popconfirm {
+    min-width: 177px;
+	border-radius: 3px;
+	background-color: #ffffff;
+    box-shadow: 0 4px 30px rgba(52, 63, 75, 0.15);
+    position: absolute;
+    z-index: 999;
+    > div:first-child {
+        min-height: 56px;
+        text-align: center;
+        font-size: 13px;
+        color: #5a6978;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    > div:last-child {
+        display: flex;
+        > button:first-child {
+            height: 34px;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            margin: 0;
+            flex: 1;
+        }
+        > button:last-child {
+            height: 34px;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+            border-bottom-left-radius: 0;
+        	background-color: #c6cbd0;
+            margin: 0;
+            flex: 1
+        }
+    }
+}

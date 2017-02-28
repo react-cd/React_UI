@@ -1,0 +1,21 @@
+.mq-form{
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 13px;
+    line-height: 1.42857143;
+    color: #5a6978;
+    background-color: #fff;
+    border: 1px solid #d4dadd;
+    border-radius: 3px;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+
+    &:hover, &:focus{
+        border-color: #c6cbd0;
+    }
+
+    &.mq-form-error{
+        border-color: red;
+    }
+}

@@ -1,0 +1,14 @@
+language: node_js
+node_js:
+  - "5.11.0"
+cache:
+  directories:
+    - node_modules
+before_install:
+  - export CHROME_BIN=chromium-browser
+  - export DISPLAY=:99.0
+  - sh -e /etc/init.d/xvfb start
+notifications:
+  slack:
+    rooms:
+      - meiqia:9wiAb5G7gSpT6tVTOLZ0G9wK#frontend
